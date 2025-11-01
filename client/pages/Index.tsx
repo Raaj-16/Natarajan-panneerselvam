@@ -1,4 +1,3 @@
-import { DemoResponse } from "@shared/api";
 import Hero from "@/components/portfolio/Hero";
 import About from "@/components/portfolio/About";
 import Skills from "@/components/portfolio/Skills";
@@ -13,7 +12,7 @@ export default function Index() {
       <Skills />
       <Projects />
       <Contact />
-      <footer className="border-t border-border py-8 text-center text-sm text-foreground/60">
+      <footer className="border-t border-border py-12 text-center text-sm text-foreground/60">
         © {new Date().getFullYear()} Natarajan Panneerselvam. All rights reserved.
       </footer>
     </main>
