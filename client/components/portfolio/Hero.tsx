@@ -139,10 +139,6 @@ Chennai, India
 
       <div className="mx-auto max-w-3xl px-6 pt-32 pb-20 md:pt-40">
         <div className="flex flex-col items-center text-center">
-          <span className="mb-3 inline-flex items-center gap-2 rounded-full border border-border bg-white/70 px-3 py-1 text-xs tracking-wide backdrop-blur-sm dark:bg-black/40">
-            <Sparkles className="h-3.5 w-3.5" />
-            Portfolio
-          </span>
           <h1 className="text-4xl font-extrabold tracking-tight text-foreground md:text-5xl lg:text-6xl">
             <span className="font-mono">{typed}</span>
             <span className="animate-pulse">|</span>
@@ -168,7 +164,7 @@ Chennai, India
               </Button>
             </a>
             <Button
-              onClick={https://drive.google.com/file/d/1g5MLfmUJGObwBGMd6OIVfiUWOc2_Lv8c/view?usp=sharing}
+              onClick={downloadResume}
               variant="outline"
               className="rounded-full px-8 gap-2"
             >
