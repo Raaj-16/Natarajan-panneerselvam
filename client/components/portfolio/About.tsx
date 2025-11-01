@@ -14,10 +14,13 @@ export default function About() {
         <div className="space-y-8">
           <div className="space-y-4 text-foreground/80 leading-relaxed">
             <p>
-              I'm Natarajan Panneerselvam, a software engineer passionate about building delightful user interfaces and robust systems. I bring craft, care, and pragmatism to every project I take on.
+              I'm Natarajan Panneerselvam, a Frontend Software Engineer passionate about creating scalable, responsive web applications that deliver exceptional user experiences. With 3+ years of professional experience, I specialize in building modern web solutions using cutting-edge technologies.
             </p>
             <p>
-              My focus is modern React, TypeScript, performance, design systems, and accessible UI—delivering clean, scalable code and polished product experiences. With 5+ years of experience, I've worked on various projects from startups to established companies.
+              My expertise spans across the entire development spectrum—from crafting pixel-perfect UIs with HTML5, CSS3, and JavaScript to building robust backend systems using Node.js and Java. I'm adept at collaborating with cross-functional teams and integrating complex backend systems seamlessly with intuitive frontends.
+            </p>
+            <p>
+              I'm particularly passionate about writing clean, maintainable code, optimizing application performance, and implementing accessibility best practices. Whether it's architecting scalable React applications, building responsive interfaces with Angular or Vue.js, or developing full-stack solutions with the MERN stack, I bring a meticulous approach to every project.
             </p>
           </div>
 
@@ -25,7 +28,7 @@ export default function About() {
             <ul className="space-y-4 text-sm">
               <li className="flex items-center justify-between border-b border-border/50 pb-4">
                 <span className="text-foreground/60 font-medium">Experience</span>
-                <span className="font-semibold text-foreground">5+ years</span>
+                <span className="font-semibold text-foreground">3+ years</span>
               </li>
               <li className="flex items-center justify-between border-b border-border/50 pb-4">
                 <span className="text-foreground/60 font-medium">Location</span>
@@ -33,7 +36,7 @@ export default function About() {
               </li>
               <li className="flex items-center justify-between">
                 <span className="text-foreground/60 font-medium">Role</span>
-                <span className="font-semibold text-foreground">Full-Stack Engineer</span>
+                <span className="font-semibold text-foreground">Software Engineer</span>
               </li>
             </ul>
           </div>
