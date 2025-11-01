@@ -30,44 +30,71 @@ function useTypewriter(text: string, speedMs = 85) {
 }
 
 export default function Hero() {
-  const typed = useTypewriter("Natarajan", 90);
+  const typed = useTypewriter("Natarajan Panneerselvam", 50);
 
   const downloadResume = () => {
-    // Create a simple resume file
+    // Create a detailed resume file
     const resumeContent = `
-Natarajan Panneerselvam
-Frontend-focused Full-Stack Engineer
+NATARAJAN PANNEERSELVAM
+Software Engineer | Frontend-Focused Full-Stack Developer
+Chennai, India
+
+CONTACT INFORMATION
+Phone: +91 7338767673
+Email: Natarajan.jai.1607@gmail.com
+LinkedIn: https://www.linkedin.com/in/natarajan-p-66a9b3226/
 
 PROFESSIONAL SUMMARY
-Frontend-focused full-stack engineer crafting fast, accessible, and elegant web experiences.
-Experienced in modern React, TypeScript, performance optimization, design systems, and accessible UI.
+Frontend Software Engineer with 3+ years of experience in developing scalable and responsive web applications. Adept in collaborating with cross-functional teams and integrating backend systems. Specialist in modern JavaScript frameworks including React, Angular, and Vue.js with full-stack capabilities. Enthusiastic about writing clean, maintainable code and passionate about creating user-centric solutions with a focus on performance optimization and accessibility.
 
-EXPERIENCE
-Senior Frontend Engineer | 5+ Years
-- Developed and maintained scalable React applications
-- Built responsive, accessible UI components
-- Optimized application performance and bundle sizes
-- Led technical designs for feature implementations
+TECHNICAL SKILLS
 
-SKILLS
-Frontend: React, TypeScript, TailwindCSS, JavaScript
-Backend: Node.js, Express, PostgreSQL
-Tools: Git, Docker, Vite, Webpack
-Design: Design Systems, Accessibility (a11y), UI/UX
+Frontend Technologies:
+- HTML5, CSS3, JavaScript (ES6+)
+- React, Angular, Vue.js, Next.js
+- TypeScript, TailwindCSS
+- Responsive Design, UI/UX Implementation
+
+Backend Development:
+- Node.js, Java, Spring Boot
+- RESTful APIs, GraphQL
+- Database Design & Optimization
+
+Development Tools & Practices:
+- Git, Bitbucket, GitHub
+- Jenkins, CI/CD Pipelines
+- Git Workflows & Version Control
+- Testing & Debugging
+
+PROFESSIONAL EXPERIENCE
+
+Developed multiple scalable web applications using React with TypeScript for type safety
+Built responsive UI components with modern CSS frameworks and design systems
+Integrated REST APIs and GraphQL endpoints for seamless backend communication
+Collaborated with backend teams to implement Java and Node.js services
+Optimized application performance and bundle sizes for faster load times
+Implemented testing strategies and maintained code quality standards
 
 PROJECTS
+
 E-commerce Admin Dashboard
-Analytics, inventory, and order management with charts and real-time updates.
+Full-featured analytics and order management system built with React and TypeScript
+Features real-time updates with charts and inventory management
+Tech Stack: React, TypeScript, Node.js, GraphQL
 
-Realtime Chat App
-Typing indicators, message receipts, and responsive design for all devices.
+Realtime Chat Application
+Interactive messaging platform with typing indicators and message receipts
+Built with React frontend and Node.js backend with WebSocket integration
+Fully responsive design for all device sizes
 
-Personal Website
-Fast, accessible portfolio powered by modern tooling and design system.
+Personal Portfolio
+Fast, accessible portfolio website showcasing projects and skills
+Built with modern tooling and performance optimization
+Tech Stack: React, Next.js, TailwindCSS, Vite
 
-EDUCATION
-Full Stack Development Certification
-Technology Institute, 2019
+EDUCATION & CERTIFICATIONS
+Full Stack Development specialization
+Completed comprehensive training in MERN stack and modern web development practices
 
 LOCATION
 Chennai, India
