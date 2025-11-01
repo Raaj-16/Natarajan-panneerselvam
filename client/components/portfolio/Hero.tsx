@@ -168,7 +168,7 @@ Chennai, India
               </Button>
             </a>
             <Button
-              onClick={downloadResume}
+              onClick={https://drive.google.com/file/d/1g5MLfmUJGObwBGMd6OIVfiUWOc2_Lv8c/view?usp=sharing}
               variant="outline"
               className="rounded-full px-8 gap-2"
             >
