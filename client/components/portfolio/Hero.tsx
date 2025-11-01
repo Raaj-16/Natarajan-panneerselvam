@@ -112,13 +112,13 @@ Chennai, India
   return (
     <section id="home" className="relative overflow-hidden">
       <div className="absolute inset-0 -z-10">
-        <div className="absolute inset-0 bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50 dark:from-blue-950 dark:via-purple-950 dark:to-pink-950" />
+        <div className="absolute inset-0 bg-gradient-to-br from-blue-100 via-blue-50 to-cyan-50 dark:from-blue-950 dark:via-slate-900 dark:to-blue-900" />
         <svg className="absolute inset-0 h-full w-full" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" viewBox="0 0 1440 320">
           <defs>
             <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
-              <stop offset="0%" stopColor="rgba(59, 130, 246, 0.1)" />
-              <stop offset="50%" stopColor="rgba(168, 85, 247, 0.08)" />
-              <stop offset="100%" stopColor="rgba(236, 72, 153, 0.1)" />
+              <stop offset="0%" stopColor="rgba(59, 130, 246, 0.15)" />
+              <stop offset="50%" stopColor="rgba(30, 144, 255, 0.1)" />
+              <stop offset="100%" stopColor="rgba(0, 150, 255, 0.12)" />
             </linearGradient>
           </defs>
           <path fill="url(#grad)" fillOpacity="1" d="M0,96L48,112C96,128,192,160,288,165.3C384,171,480,149,576,144C672,139,768,149,864,160C960,171,1056,181,1152,176C1248,171,1344,149,1392,138.7L1440,128L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z" />
