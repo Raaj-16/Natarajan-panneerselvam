@@ -13,7 +13,8 @@ export default function Index() {
       <Projects />
       <Contact />
       <footer className="border-t border-border py-12 text-center text-sm text-foreground/60">
-        © {new Date().getFullYear()} Natarajan Panneerselvam. All rights reserved.
+        © {new Date().getFullYear()} Natarajan Panneerselvam. All rights
+        reserved.
       </footer>
     </main>
   );

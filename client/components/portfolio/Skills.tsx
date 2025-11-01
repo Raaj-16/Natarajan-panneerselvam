@@ -18,7 +18,15 @@ const SKILLS = [
   { name: "UI/UX Implementation", level: 88 },
 ];
 
-function SkillBar({ name, level, index }: { name: string; level: number; index: number }) {
+function SkillBar({
+  name,
+  level,
+  index,
+}: {
+  name: string;
+  level: number;
+  index: number;
+}) {
   const delay = index * 0.15;
   const delayClass = `delay-${index}`;
 
@@ -54,7 +62,9 @@ function SkillBar({ name, level, index }: { name: string; level: number; index: 
       `}</style>
       <div className="flex items-center justify-between">
         <span className="font-medium text-foreground">{name}</span>
-        <span className="text-sm font-semibold text-foreground/70">{level}%</span>
+        <span className="text-sm font-semibold text-foreground/70">
+          {level}%
+        </span>
       </div>
       <div className="relative h-4 w-full overflow-hidden rounded-full bg-gray-200 dark:bg-gray-700 shadow-inner">
         <div

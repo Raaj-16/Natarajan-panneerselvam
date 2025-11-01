@@ -1,16 +1,34 @@
 import { useState } from "react";
 import { toast } from "sonner";
-import { Mail, MapPin, Phone, Send, Linkedin, Github, Twitter, Copy } from "lucide-react";
+import {
+  Mail,
+  MapPin,
+  Phone,
+  Send,
+  Linkedin,
+  Github,
+  Twitter,
+  Copy,
+} from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const CONTACTS = [
-  { label: "Email", value: "Natarajan.jai.1607@gmail.com", icon: Mail, action: "mailto" },
+  {
+    label: "Email",
+    value: "Natarajan.jai.1607@gmail.com",
+    icon: Mail,
+    action: "mailto",
+  },
   { label: "Phone", value: "+91 7338767673", icon: Phone, action: "tel" },
   { label: "Location", value: "Chennai, India", icon: MapPin, action: "maps" },
 ];
 
 const SOCIAL_LINKS = [
-  { name: "LinkedIn", icon: Linkedin, url: "https://www.linkedin.com/in/natarajan-p-66a9b3226/" },
+  {
+    name: "LinkedIn",
+    icon: Linkedin,
+    url: "https://www.linkedin.com/in/natarajan-p-66a9b3226/",
+  },
   { name: "GitHub", icon: Github, url: "#" },
   { name: "Twitter", icon: Twitter, url: "#" },
 ];
@@ -22,7 +40,9 @@ export default function Contact() {
     message: "",
   });
 
-  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleInputChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
+  ) => {
     const { name, value } = e.target;
     setFormData((prev) => ({
       ...prev,
@@ -48,7 +68,10 @@ export default function Contact() {
       window.location.href = `tel:${value}`;
       toast.success("Opening phone dialer...");
     } else if (action === "maps") {
-      window.open(`https://maps.google.com/?q=${encodeURIComponent(value)}`, "_blank");
+      window.open(
+        `https://maps.google.com/?q=${encodeURIComponent(value)}`,
+        "_blank",
+      );
       toast.success("Opening Google Maps...");
     }
   };
@@ -71,7 +94,9 @@ export default function Contact() {
         <div className="space-y-8">
           {/* Contact Details */}
           <div className="space-y-4">
-            <h3 className="text-lg font-semibold text-foreground">Get in Touch</h3>
+            <h3 className="text-lg font-semibold text-foreground">
+              Get in Touch
+            </h3>
             {CONTACTS.map(({ label, value, icon: Icon, action }) => (
               <div
                 key={label}
@@ -83,7 +108,9 @@ export default function Contact() {
                       <Icon className="h-5 w-5" />
                     </div>
                     <div className="flex-1">
-                      <span className="font-medium text-foreground block">{label}</span>
+                      <span className="font-medium text-foreground block">
+                        {label}
+                      </span>
                       <button
                         onClick={() => handleContactClick(action, value)}
                         className="text-left text-foreground/80 transition-colors hover:text-foreground font-medium text-sm mt-1 hover:underline"
@@ -107,7 +134,9 @@ export default function Contact() {
 
           {/* Social Links */}
           <div className="space-y-4">
-            <h3 className="text-lg font-semibold text-foreground">Connect on Social</h3>
+            <h3 className="text-lg font-semibold text-foreground">
+              Connect on Social
+            </h3>
             <div className="flex gap-4">
               {SOCIAL_LINKS.map(({ name, icon: Icon, url }) => (
                 <a
@@ -127,10 +156,15 @@ export default function Contact() {
 
           {/* Contact Form */}
           <div className="space-y-4">
-            <h3 className="text-lg font-semibold text-foreground">Send a Message</h3>
+            <h3 className="text-lg font-semibold text-foreground">
+              Send a Message
+            </h3>
             <form onSubmit={handleSubmit} className="space-y-4">
               <div>
-                <label htmlFor="name" className="block text-sm font-medium text-foreground/80 mb-2">
+                <label
+                  htmlFor="name"
+                  className="block text-sm font-medium text-foreground/80 mb-2"
+                >
                   Your Name
                 </label>
                 <input
@@ -144,7 +178,10 @@ export default function Contact() {
                 />
               </div>
               <div>
-                <label htmlFor="email" className="block text-sm font-medium text-foreground/80 mb-2">
+                <label
+                  htmlFor="email"
+                  className="block text-sm font-medium text-foreground/80 mb-2"
+                >
                   Your Email
                 </label>
                 <input
@@ -158,7 +195,10 @@ export default function Contact() {
                 />
               </div>
               <div>
-                <label htmlFor="message" className="block text-sm font-medium text-foreground/80 mb-2">
+                <label
+                  htmlFor="message"
+                  className="block text-sm font-medium text-foreground/80 mb-2"
+                >
                   Message
                 </label>
                 <textarea

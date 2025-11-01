@@ -101,7 +101,10 @@ Chennai, India
     `.trim();
 
     const element = document.createElement("a");
-    element.setAttribute("href", "data:text/plain;charset=utf-8," + encodeURIComponent(resumeContent));
+    element.setAttribute(
+      "href",
+      "data:text/plain;charset=utf-8," + encodeURIComponent(resumeContent),
+    );
     element.setAttribute("download", "Natarajan_Resume.txt");
     element.style.display = "none";
     document.body.appendChild(element);
@@ -113,7 +116,12 @@ Chennai, India
     <section id="home" className="relative overflow-hidden">
       <div className="absolute inset-0 -z-10">
         <div className="absolute inset-0 bg-gradient-to-br from-blue-100 via-blue-50 to-cyan-50 dark:from-blue-950 dark:via-slate-900 dark:to-blue-900" />
-        <svg className="absolute inset-0 h-full w-full" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" viewBox="0 0 1440 320">
+        <svg
+          className="absolute inset-0 h-full w-full"
+          xmlns="http://www.w3.org/2000/svg"
+          preserveAspectRatio="none"
+          viewBox="0 0 1440 320"
+        >
           <defs>
             <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
               <stop offset="0%" stopColor="rgba(59, 130, 246, 0.15)" />
@@ -121,7 +129,11 @@ Chennai, India
               <stop offset="100%" stopColor="rgba(0, 150, 255, 0.12)" />
             </linearGradient>
           </defs>
-          <path fill="url(#grad)" fillOpacity="1" d="M0,96L48,112C96,128,192,160,288,165.3C384,171,480,149,576,144C672,139,768,149,864,160C960,171,1056,181,1152,176C1248,171,1344,149,1392,138.7L1440,128L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z" />
+          <path
+            fill="url(#grad)"
+            fillOpacity="1"
+            d="M0,96L48,112C96,128,192,160,288,165.3C384,171,480,149,576,144C672,139,768,149,864,160C960,171,1056,181,1152,176C1248,171,1344,149,1392,138.7L1440,128L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"
+          />
         </svg>
       </div>
 
@@ -136,16 +148,30 @@ Chennai, India
             <span className="animate-pulse">|</span>
           </h1>
           <div className="mt-4 text-lg text-foreground/70 md:text-xl">
-            <span className="font-semibold text-foreground">Software Engineer</span>
+            <span className="font-semibold text-foreground">
+              Software Engineer
+            </span>
           </div>
           <p className="mt-6 max-w-2xl text-base text-gray-700 dark:text-gray-300 leading-relaxed">
-            Frontend Software Engineer with 3+ years of experience building scalable, responsive web applications. Specialized in React, Angular, Vue.js, and full-stack development with Node.js and Java.
+            Frontend Software Engineer with 3+ years of experience building
+            scalable, responsive web applications. Specialized in React,
+            Angular, Vue.js, and full-stack development with Node.js and Java.
           </p>
 
           <div className="mt-10 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
-            <a href="#projects"><Button className="rounded-full px-8">View Projects</Button></a>
-            <a href="#contact"><Button variant="outline" className="rounded-full px-8">Contact</Button></a>
-            <Button onClick={downloadResume} variant="outline" className="rounded-full px-8 gap-2">
+            <a href="#projects">
+              <Button className="rounded-full px-8">View Projects</Button>
+            </a>
+            <a href="#contact">
+              <Button variant="outline" className="rounded-full px-8">
+                Contact
+              </Button>
+            </a>
+            <Button
+              onClick={downloadResume}
+              variant="outline"
+              className="rounded-full px-8 gap-2"
+            >
               <Download className="h-4 w-4" />
               Resume
             </Button>

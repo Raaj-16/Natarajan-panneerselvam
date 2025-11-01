@@ -1,6 +1,15 @@
 import { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Menu, X, Home, User, Wrench, FolderGit2, Mail, Download } from "lucide-react";
+import {
+  Menu,
+  X,
+  Home,
+  User,
+  Wrench,
+  FolderGit2,
+  Mail,
+  Download,
+} from "lucide-react";
 import { cn } from "@/lib/utils";
 
 export default function Header() {
@@ -61,7 +70,10 @@ Chennai, India
     `.trim();
 
     const element = document.createElement("a");
-    element.setAttribute("href", "data:text/plain;charset=utf-8," + encodeURIComponent(resumeContent));
+    element.setAttribute(
+      "href",
+      "data:text/plain;charset=utf-8," + encodeURIComponent(resumeContent),
+    );
     element.setAttribute("download", "Natarajan_Resume.txt");
     element.style.display = "none";
     document.body.appendChild(element);
@@ -69,7 +81,15 @@ Chennai, India
     document.body.removeChild(element);
   };
 
-  const NavLink = ({ href, icon: Icon, label }: { href: string; icon: any; label: string }) => (
+  const NavLink = ({
+    href,
+    icon: Icon,
+    label,
+  }: {
+    href: string;
+    icon: any;
+    label: string;
+  }) => (
     <a
       href={href}
       className="group inline-flex items-center gap-2 rounded-md px-3 py-2 text-sm text-foreground/80 transition-colors hover:text-foreground"
@@ -85,11 +105,14 @@ Chennai, India
         "fixed inset-x-0 top-0 z-50 transition-all",
         scrolled
           ? "backdrop-blur-sm bg-white/70 dark:bg-black/40 border-b border-border"
-          : "bg-transparent"
+          : "bg-transparent",
       )}
     >
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-3">
-        <Link to="/" className="flex items-center gap-2 text-sm font-semibold tracking-wide">
+        <Link
+          to="/"
+          className="flex items-center gap-2 text-sm font-semibold tracking-wide"
+        >
           <div className="h-7 w-7 rounded-md bg-foreground" />
           <span className="text-foreground">NP</span>
         </Link>
@@ -123,15 +146,45 @@ Chennai, India
       <div
         className={cn(
           "md:hidden overflow-hidden transition-[max-height] duration-300",
-          open ? "max-h-80" : "max-h-0"
+          open ? "max-h-80" : "max-h-0",
         )}
       >
         <div className="space-y-1 border-t border-border px-6 pb-6 pt-3">
-          <a onClick={() => setOpen(false)} href="#home" className="block rounded-md px-3 py-2 text-foreground/80 hover:bg-accent/60">Home</a>
-          <a onClick={() => setOpen(false)} href="#about" className="block rounded-md px-3 py-2 text-foreground/80 hover:bg-accent/60">About</a>
-          <a onClick={() => setOpen(false)} href="#skills" className="block rounded-md px-3 py-2 text-foreground/80 hover:bg-accent/60">Skills</a>
-          <a onClick={() => setOpen(false)} href="#projects" className="block rounded-md px-3 py-2 text-foreground/80 hover:bg-accent/60">Projects</a>
-          <a onClick={() => setOpen(false)} href="#contact" className="block rounded-md px-3 py-2 text-foreground/80 hover:bg-accent/60">Contact</a>
+          <a
+            onClick={() => setOpen(false)}
+            href="#home"
+            className="block rounded-md px-3 py-2 text-foreground/80 hover:bg-accent/60"
+          >
+            Home
+          </a>
+          <a
+            onClick={() => setOpen(false)}
+            href="#about"
+            className="block rounded-md px-3 py-2 text-foreground/80 hover:bg-accent/60"
+          >
+            About
+          </a>
+          <a
+            onClick={() => setOpen(false)}
+            href="#skills"
+            className="block rounded-md px-3 py-2 text-foreground/80 hover:bg-accent/60"
+          >
+            Skills
+          </a>
+          <a
+            onClick={() => setOpen(false)}
+            href="#projects"
+            className="block rounded-md px-3 py-2 text-foreground/80 hover:bg-accent/60"
+          >
+            Projects
+          </a>
+          <a
+            onClick={() => setOpen(false)}
+            href="#contact"
+            className="block rounded-md px-3 py-2 text-foreground/80 hover:bg-accent/60"
+          >
+            Contact
+          </a>
           <button
             onClick={downloadResume}
             className="w-full flex items-center gap-2 rounded-md px-3 py-2 text-foreground/80 hover:bg-accent/60 transition-colors"
