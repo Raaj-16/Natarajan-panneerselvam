@@ -2,13 +2,20 @@ import { Wrench } from "lucide-react";
 
 const SKILLS = [
   { name: "React", level: 95 },
+  { name: "JavaScript (ES6+)", level: 93 },
   { name: "TypeScript", level: 90 },
-  { name: "Node.js", level: 85 },
-  { name: "Express", level: 88 },
-  { name: "TailwindCSS", level: 92 },
-  { name: "PostgreSQL", level: 80 },
-  { name: "Git & DevOps", level: 85 },
-  { name: "UI/UX Design", level: 82 },
+  { name: "Angular", level: 85 },
+  { name: "Vue.js", level: 85 },
+  { name: "Next.js", level: 88 },
+  { name: "HTML5 & CSS3", level: 94 },
+  { name: "Node.js", level: 88 },
+  { name: "Java & Spring Boot", level: 82 },
+  { name: "GraphQL", level: 80 },
+  { name: "RESTful APIs", level: 92 },
+  { name: "Git & GitHub", level: 90 },
+  { name: "Jenkins & CI/CD", level: 80 },
+  { name: "Responsive Design", level: 95 },
+  { name: "UI/UX Implementation", level: 88 },
 ];
 
 function SkillBar({ name, level, index }: { name: string; level: number; index: number }) {
