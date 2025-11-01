@@ -6,7 +6,7 @@ import Contact from "@/components/portfolio/Contact";
 
 export default function Index() {
   return (
-    <main className="min-h-screen bg-gradient-to-b from-[#faf8f3] to-white dark:from-black dark:to-[#0a0a0a]">
+    <main className="min-h-screen bg-gradient-to-b from-blue-50 via-blue-25 to-white dark:from-slate-900 dark:via-blue-950 dark:to-slate-900">
       <Hero />
       <About />
       <Skills />
