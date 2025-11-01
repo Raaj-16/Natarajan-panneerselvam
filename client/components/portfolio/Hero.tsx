@@ -131,17 +131,15 @@ Chennai, India
             <Sparkles className="h-3.5 w-3.5" />
             Portfolio
           </span>
-          <h1 className="text-5xl font-extrabold tracking-wide text-foreground md:text-6xl lg:text-7xl">
-            <span className="text-foreground">Natarajan</span>
-            <span className="sr-only">Natarajan</span>
-          </h1>
-          <div className="mt-2 text-lg text-foreground/70 md:text-xl">
-            <span className="font-semibold text-foreground">Hi, I'm </span>
+          <h1 className="text-4xl font-extrabold tracking-tight text-foreground md:text-5xl lg:text-6xl">
             <span className="font-mono">{typed}</span>
             <span className="animate-pulse">|</span>
+          </h1>
+          <div className="mt-4 text-lg text-foreground/70 md:text-xl">
+            <span className="font-semibold text-foreground">Software Engineer</span>
           </div>
           <p className="mt-6 max-w-2xl text-base text-gray-700 dark:text-gray-300 leading-relaxed">
-            Frontend-focused full-stack engineer crafting fast, accessible, and elegant web experiences.
+            Frontend Software Engineer with 3+ years of experience building scalable, responsive web applications. Specialized in React, Angular, Vue.js, and full-stack development with Node.js and Java.
           </p>
 
           <div className="mt-10 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
